@@ -1,0 +1,83 @@
+$ git diff readme.txt 可以查看修改内容。
+
+$ git status 查看工作区状态
+
+$ git reflog Git提供了一个命令git reflog用来记录你的每一次命令：
+
+$ git reset --hard commit_id。跳到一个版本
+
+$ git log可以查看提交历史
+
+$ git reflog查看命令历史
+
+$ git reset HEAD redme.txt  从暂存区撤销redme.txt文件  与 git add redme.txt 对应
+
+$ git checkout redme.txt 从工作区撤销本次的更改
+
+$ git rm test.txt  从工作区提交“删除一个文件”到暂存区
+
+$ git remote add origin git@github.com:michaelliao/learngit.git 关联远程库
+
+$ git push -u origin master 把本地库的所有内容提交到远程库
+由于远程库是空的，我们第一次推送master分支时，加上了-u参数，git不但会把本地的maser分支内容推送到远程master分支，还会把本地的Master和远程的Master关联起来，以后推送拉取就可以简化命令了。
+
+
+git 鼓励大量的使用分支
+
+git  branch  查看分支
+
+git branch <name> 创建分支
+
+git checkout  <name>  切换分支
+
+git checkout -b  <name> 创建并切换分支
+
+git merge <name> 合并分支到当前分支
+
+git branch -d  <name> 删除分支
+
+
+
+
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+这些都是常见的Git命令中使用的各种各样的问题:
+
+开始一个工作区域:
+   clone      克隆存储库到一个新的目录
+   init       创建一个空的Git存储库或重新启动一个现有的一个
+
+工程修改 (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+检查历史状态 (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+完善，标记或调整你们的公共历史
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
