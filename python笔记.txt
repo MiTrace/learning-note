@@ -20,5 +20,27 @@
 	【常量】在python中  全部大写的变量名表示常量，但这仅仅是习惯上的用法，你非要改他的值并没有人能拦得住你 事实上它还是一个变量--
 	
 字符串和编码：
+	对于单个字符编码，python提供了ord（）函数获取字符的整数表示，chr（）把编码转换为对应的字符。
+	
+	对于byte型的数据  用带b'ABC'形式表示，注意‘ABC’和b'ABC'的区分，后者虽然内容显示的和前者一样，但Bytes的每个字符只占用一个字节
+	
+	Unicode表示的str通过encode（）方法可以编码指定为bytes
+	>>> '中文'.encode('utf-8')
+	b'\xe4\xb8\xad\xe6\x96\x87'
+	>>> '中文'.encode('ascii')
+	Traceback (most recent call last):
+	File "<stdin>", line 1, in <module>
+	UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
