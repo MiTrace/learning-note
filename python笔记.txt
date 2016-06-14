@@ -32,9 +32,19 @@
 	File "<stdin>", line 1, in <module>
 	UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
 	
+	decode()和encode（）相反，为byte转文字
+	>>> b'ABC'.decode('ascii')
+	'ABC'
+	>>> b'\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')
+	'中文'
+	计算str的长度
+	len()
 	
-	
-	
+	让程序按UTF-8读取
+	#!/usr/bin/env python3
+	# -*- coding: utf-8 -*-
+	第一行注释是为了告诉Linux/OS X系统，这是一个Python可执行程序，Windows系统会忽略这个注释；
+	第二行注释是为了告诉Python解释器，按照UTF-8编码读取源代码，否则，你在源代码中写的中文输出可能会有乱码。
 	
 	
 	
