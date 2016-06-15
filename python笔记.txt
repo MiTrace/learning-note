@@ -71,5 +71,24 @@ else:
 Ñ­»·
 ---------------------------------------------------------------------
 	
+	forÑ­»·£º
+	
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+sum = 0
+for x in range(101):
+    sum = sum + x
+print(sum)
+
+	whileÑ­»·£º
+	
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+sum=0
+i=100
+while i>0:
+	sum=sum+i
+	i=i-1
+print(sum)
 
 	
